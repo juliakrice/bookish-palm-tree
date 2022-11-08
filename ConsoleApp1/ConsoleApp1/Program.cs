@@ -23,24 +23,44 @@ namespace ConsoleApp1
 
             if (unit == "kg" && newUnit == "lbs")
             {
-                Console.WriteLine(value * 2.2 + " lbs");
+                Console.WriteLine((double)value * 2.2 + " lbs");
             }
 
             if (unit == "lbs" && newUnit == "kg")
             {
-                Console.WriteLine(value * 0.45359237 + " kg");
+                Console.WriteLine((double)value * 0.45359237 + " kg");
             }
 
             if (unit == "cm" && newUnit == "in")
             {
-                Console.WriteLine(value / 2.54 + " in");
+                Console.WriteLine((double)value / 2.54 + " in");
             }
 
             if (unit == "in" && newUnit == "cm")
             {
-                Console.WriteLine(value * 2.54 + " cm");
+                Console.WriteLine((double)value * 2.54 + " cm");
             }
 
+            if (unit == "lbs" && newUnit == "oz")
+            {
+                Console.WriteLine((double)value * 16 + " oz");
+            }
+
+            if (unit == "oz" && newUnit == "lbs")
+            {
+                Console.WriteLine((double)value / 16 + " lbs");
+
+            }
+
+            if (unit == "cm" && newUnit == "mm")
+            {
+                Console.WriteLine((double)value * 10 + " mm");
+            }
+
+            if (unit == "mm" && newUnit == "cm")
+            {
+                Console.WriteLine((double)value / 10 + " cm");
+            }
             //NR: Added ML => OZ
             if (unit == "oz" && newUnit == "ml")
             {
